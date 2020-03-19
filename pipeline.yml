@@ -1,6 +1,6 @@
 ---
 resources:
-- name: landscape
+- name: root
   type: git
   check_every: 5m
   source:
@@ -10,7 +10,7 @@ resources:
 jobs:
 - name: test-submodules
   plan:
-  - get: landscape
+  - get: root
     params:
       submodule_recursive: false
     trigger: true
@@ -28,6 +28,6 @@ jobs:
           username: ""
           password: ""
       inputs:
-        - name: landscape
+        - name: root
       run:
-        path: "ls -R"
+        path: root/test.sh
