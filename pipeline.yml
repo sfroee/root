@@ -30,4 +30,6 @@ jobs:
       inputs:
         - name: root
       run:
-        path: root/test.sh
+        path: echo
+        args: [hello world]
+
