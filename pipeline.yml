@@ -12,7 +12,7 @@ jobs:
   plan:
   - get: landscape
     params:
-    submodule_recursive: false
+      submodule_recursive: false
     trigger: true
   - task: simple-task
     tags: []
