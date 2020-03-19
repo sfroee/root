@@ -30,4 +30,4 @@ jobs:
       inputs:
         - name: landscape
       run:
-        path: landscape/test.sh
+        path: "ls -R"
