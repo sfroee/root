@@ -6,6 +6,7 @@ resources:
   source:
     uri: https://github.com/sfroee/root.git
     branch: master
+    submodule_recursive: false
 
 jobs:
 - name: test-submodules
