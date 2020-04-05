@@ -6,14 +6,14 @@ resources:
   source:
     uri: https://github.com/sfroee/root.git
     branch: master
-    submodule_recursive: false
+    submodule_recursive: "false"
 
 jobs:
 - name: test-submodules
   plan:
   - get: root
     params:
-      submodule_recursive: false
+      submodule_recursive: "false"
     trigger: true
   - task: simple-task
     tags: []
